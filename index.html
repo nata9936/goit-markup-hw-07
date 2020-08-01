@@ -12,14 +12,14 @@
       rel="stylesheet"
       href="./https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/0.6.0/modern-normalize.min.css"
     />
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/main.min.css" />
   </head>
 
   <body>
     <main>
       <header class="header">
         <div class="container main-nav">
-          <a href="">
+          <a class="link-logo" href="">
             <span class="logo-web">Web</span>
             <span class="logo-studio">Studio</span>
           </a>
@@ -105,86 +105,7 @@
         </div>
       </section>
 
-      <div class="backdrop is-hidden" data-backdrop>
-        <div class="modal">
-          <form class="js-speaker-form form">
-            <h2 class="form-title">Оставьте свои данные, мы вам перезвоним</h2>
-            <div class="form-field">
-              <input
-                type="text"
-                name="name"
-                id="name"
-                class="form-input"
-                placeholder=" "
-              />
-              <label for="name" class="form-label">Имя</label>
-              <svg class="form-icon">
-                <use href="./img/symbol.defs.svg#icon-person-black"></use>
-              </svg>
-            </div>
-
-            <div class="form-field">
-              <input
-                type="tel"
-                name="tel"
-                id="tel"
-                class="form-input"
-                placeholder=" "
-              />
-              <label for="tel" class="form-label">Телефон</label>
-              <svg class="form-icon">
-                <use href="./img/symbol.defs.svg#icon-telephon"></use>
-              </svg>
-            </div>
-
-            <div class="form-field">
-              <input
-                type="email"
-                name="email"
-                id="email"
-                class="form-input"
-                placeholder=" "
-              />
-              <label for="email" class="form-label">
-                Почта
-              </label>
-              <svg class="form-icon">
-                <use href="./img/symbol.defs.svg#icon-email"></use>
-              </svg>
-            </div>
-
-            <div class="form-field">
-              <textarea
-                class="textarea"
-                name="comment"
-                id="comment"
-                placeholder=" "
-              ></textarea>
-              <label class="form-comment" for="comment">Комментарий</label>
-            </div>
-
-            <label class="form-consent" for="consent">
-              <input
-                class="checkbox"
-                type="checkbox"
-                name="consent"
-                id="consent"
-              />
-              <span class="icon-consent"></span>
-              Соглашаюсь с рассылкой и принимаю
-              <a class="form-link" href="">Условия договора</a>
-            </label>
-
-            <button
-              type="submit"
-              class="frame-button button-form"
-              data-close-modal
-            >
-              Отправить
-            </button>
-          </form>
-        </div>
-      </div>
+      
       <!--What are you doing-->
       <section class="section">
         <div class="container">
@@ -192,21 +113,21 @@
           <ul class="list work">
             <li class="item">
               <img src="./img/img.svg" alt="ноут" /><a class="name-work" href=""
-                >Десктопные приложения</a
+                >ДЕСКТОПНЫЕ ПРИЛОЖЕНИЯ</a
               >
             </li>
             <li class="item">
               <img src="./img/box.svg" alt="телефон" /><a
                 class="name-work"
                 href=""
-                >Мобильные приложения</a
+                >МОБИЛЬНЫЕ ПРИЛОЖЕНИЯ</a
               >
             </li>
             <li class="item">
               <img src="./img/img1.svg" alt="комп" /><a
                 class="name-work"
                 href=""
-                >Дизайнерские решения</a
+                >ДИЗАЙНЕРСКИЕ РЕШЕНИЯ</a
               >
             </li>
           </ul>
@@ -416,7 +337,7 @@
     <footer class="page-footer">
       <div class="container footer">
         <div class="footer-logo">
-          <p class="studio">
+          <p>
             <a href="">
               <span class="logo-web">Web</span>
               <span class="title-logo-white">Studio</span></a
@@ -470,7 +391,7 @@
         </div>
       
       <form>
-        <p class="footer title-white">Подпишитесь на рассылку</p>
+        <p class="footer-title-white">Подпишитесь на рассылку</p>
        <div class="footer-mail">
         
          <input type="email" name="email" id="email" class="footer-telegram" placeholder=" "/>
@@ -481,38 +402,16 @@
            </svg>
          </button>
        </div>
-
-      
-      </form>
-
-        
-
-
-        
-
-        <!-- <div class="mail">
-          <p class="title-white">Подпишитесь на рассылку</p>
-          <ul class="list list-mail">
-            <li>
-              <p class="unique email">E-mail</p>
-            </li>
-            <li>
-              <button class="frame-button">
-                Подписаться<img class="icon-img" src="./img/iconsend.svg" />
-              </button>
-            </li>
-          </ul>
-        </div>
-      </div>
-      <div class="container">
-        <div class="line">
-          <p class="developed">2020 | Developed by GoIT Students</p>
-        </div>
-      </div> -->
+     </form>
     </footer>
 
     <div class="backdrop is-hidden" data-backdrop>
       <div class="modal">
+        <div class="modal-close" data-close-modal>
+          <svg class="button-close">
+            <use href="./img/symbol.defs.svg#icon-button-close"></use>
+          </svg>
+        </div>
         <form class="js-speaker-form form">
           <h2 class="form-title">Оставьте свои данные, мы вам перезвоним</h2>
           <div class="form-field">
@@ -584,7 +483,7 @@
           <button
             type="submit"
             class="frame-button button-form"
-            data-close-modal
+            
           >
             Отправить
           </button>
